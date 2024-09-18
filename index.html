@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="main.js" defer></script>
+  <!-- font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <!-- custom -->
+  
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+</head>
+<body>
+  <header class="header gl-padding mx-wdth">
+    <div class="header__logo-container logo-container">
+      <img src="images\logo-bookmark.svg" alt="logo" class="img logo-img">
+    </div>
+    <label for="menu-btn" class="menu-btn">
+      <img src="images\icon-hamburger.svg" alt="menu icon" class="img menu-btn-img">
+    </label>
+    <input type="checkbox" id="menu-btn" class="hidden-checkbox">
+    <nav class="navbar">
+      <div class="navbar__header-wraper">
+        <header class="nav-bar__header">
+          <div class="header__logo-container logo-container">
+            <img src="images\logo-bookmark.-mob.svg" alt="logo" class="img logo-img">
+          </div>
+          <label for="menu-btn" class="close-btn">
+            <img src="images\icon-close.svg" alt="close navigation" class="img close-icon">
+          </label>
+        </header>
+        <ul class="nav-items">
+          <li class="nav-item"><a href="#" class="nav-item__link">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-item__link">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-item__link">Contact</a></li>
+          <li class="nav-item btn-nav-item"><a role="button" href="#" class="nav-item__link border-wh-thick">login</a></li>
+        </ul>
+      </div>
+      <div class="navbar-social-media-icons icons-container">
+        <img src="images\icon-facebook.svg" alt="facebook icon" class="img fb-img">
+        <img src="images\icon-twitter.svg" alt="facebook icon" class="img twitter-img">
+      </div>
+    </nav>
+  </header>
+  <main class="sections-container">
+    <section class="hero-container grid-item-g-gl gl-padding pic-item gap-lg mx-wdth" aria-labelledby="main-title">
+      <div class="hero__img-container img-container">
+        <img src="images\illustration-hero.svg" alt="image for illustration" class="img hero__img">
+      </div>
+      <section class="hero-container__main-content grid-item-g-gl-half pic-content">
+        <h1 id="main-title" class="big-title title">A Simple Bookmark Manager</h1>
+        <p class="description">
+          A clean and simple interface to organize your favourite websites. Open a new 
+          browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <div class="btn-container">
+          <button class="btn hero-container__btn accent-btn">Get it on Chrome</button>
+          <button class="btn hero-container__btn neutral-btn">Get it on Firefox</button>
+        </div>
+      </section>
+    </section>
+    <section class="features-container grid-item-g-gl gl-padding gap-lg mx-wdth" aria-labelledby="features-title">
+      <div class="features-container__main-content grid-item-g-gl-half align-center">
+        <h2 id="features-title" class="title medium-title align-center">Features</h2>
+        <p class="description">
+          Our aim is to make it quick and easy for you to access your favourite websites. 
+          Your bookmarks sync between your devices so you can access them on the go.
+        </p>
+      </div>
+      <ul class="features-list">
+        <li class="features-list__item title" aria-checked="true">
+          <a href="#bookmark__link" class="features-item__link">Simple Bookmarking</a>
+        </li>
+        <li class="features-list__item title" aria-checked="false">
+          <a href="#search__link" class="features-item__link">Speedy Searching</a>
+        </li>
+        <li class="features-list__item title" aria-checked="false">
+          <a href="#share__link" class="features-item__link"> Easy Sharing</a>
+        </li>
+      </ul>
+      <section class="features-list-categories grid-item-g-gl" aria-label="features categories">
+        <article data-id="bookmark__link" class="features-list-categories__item grid-item-g-gl pic-item" aria-hidden="false" aria-labelledby="bookmark-title">
+          <div class="features__img-container img-container">
+            <img src="images\illustration-features-tab-1.svg" alt="bookmark image" class="img features-img">
+          </div>
+          <div class="features-list-categories__main-content grid-item-g-gl-half pic-content">
+            <h2 id="bookmark-title" class="title medium-title">Bookmark in one click</h2>
+            <p class="description">
+              Organize your bookmarks however you like. Our simple drag-and-drop interface 
+              gives you complete control over how you manage your favourite sites.
+            </p>
+            <button class="btn accent-btn features-btn">More Info</button>
+          </div>
+        </article>
+        <article data-id="search__link" class="features-list-categories__item grid-item-g-gl pic-item" aria-hidden="true" aria-labelledby="search-title">
+          <div class="features__img-container img-container">
+            <img src="images\illustration-features-tab-2.svg" alt="bookmark image" class="img features-img">
+          </div>
+          <div class="features-list-categories__main-content grid-item-g-gl-half pic-content" >
+            <h2 id="search-title" class="title medium-title">Intelligent search</h2>
+            <p class="description">
+              Our powerful search feature will help you find saved sites in no time at all. 
+              No need to trawl through all of your bookmarks.
+            </p>
+            <button class="btn accent-btn features-btn">More Info</button>
+          </div>
+        </article>
+        <article data-id="share__link" class="features-list-categories__item grid-item-g-gl pic-item" aria-hidden="true" aria-labelledby="search-title">
+          <div class="features__img-container img-container">
+            <img src="images\illustration-features-tab-3.svg" alt="bookmark image" class="img features-img">
+          </div>
+          <div class="features-list-categories__main-content grid-item-g-gl-half pic-content">
+            <h2 id="search-title" class="title medium-title">Share your bookmarks</h2>
+            <p class="description">
+              Easily share your bookmarks and collections with others. Create a shareable 
+              link that you can send at the click of a button.
+            </p>
+            <button class="btn accent-btn features-btn">More Info</button>
+          </div>
+        </article>
+      </section>
+    </section>
+    <section class="extensions-container grid-item-g-gl gl-padding gap-lg" aria-labelledby="extentions-title">
+      <div class="extensions-container__main-content grid-item-g-gl-half align-center">
+        <h2 class="title medium-title align-center" id="extensions-title">Download the extension</h2>
+        <p class="description">
+          We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+          got a favourite you’d like us to prioritize.
+        </p>
+      </div>
+      <div class="cards-container">
+        <div class="card grid-item-g-gl">
+          <div class="card__main-content grid-item-g-gl-half">
+            <img src="images\logo-chrome.svg" alt="chrome" class="img card-img">
+            <div class="card-text">
+              <h3 class="title small-title">Add to Chrome</h3>
+              <p class="description">Minimum version 62</p>
+            </div>
+          </div>
+          <div class="card__btn-container">
+            <button class="btn accent-btn">Add & Install Extension</button>
+          </div>
+        </div>
+        <div class="card grid-item-g-gl">
+          <div class="card__main-content grid-item-g-gl-half">
+            <img src="images\logo-firefox.svg" alt="chrome" class="img card-img">
+            <div class="card-text">
+              <h3 class="title small-title">Add to Firefox</h3>
+              <p class="description">Minimum version 55</p>
+            </div>
+          </div>
+          <div class="card__btn-container">
+            <button class="btn accent-btn">Add & Install Extension</button>
+          </div>   
+        </div>
+        <div class="card grid-item-g-gl">
+          <div class="card__main-content grid-item-g-gl-half">
+            <img src="images\logo-opera.svg" alt="chrome" class="img card-img">
+            <div class="card-text">
+              <h3 class="title small-title">Add to Opera</h3>
+              <p class="description"> Minimum version 46</p>
+            </div>
+          </div>
+          <div class="card__btn-container">
+            <button class="btn accent-btn">Add & Install Extension</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="questions-container grid-item-g-gl gl-padding gap-lg mx-wdth">
+      <div class="questions-container__main-content grid-item-g-gl-half">
+        <h2 id="features-title" class="title medium-title align-center">Frequently Asked Questions</h2>
+        <p class="description align-center">
+          Here are some of our FAQs. If you have any other questions you’d like 
+          answered please feel free to email us.
+        </p>
+      </div>
+      <ul class="questions-items grid-item-g-gl-half">
+        <li class="question-item">
+          <p class="question-title title">What is Bookmark?</p> 
+          <label role="button" class="question-btn" for="q1">
+            <img src="images\icon-arrow.svg" alt="open question" class="img">
+          </label>
+          <input type="checkbox" id="q1" class="q-button">
+          <div class="question-container">
+            <p class="description question-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+            </p>
+          </div>
+        </li>
+        <li class="question-item">
+          <p class="question-title title">How can I request a new browser?</p> 
+          <label role="button" class="question-btn" for="q2">
+            <img src="images\icon-arrow.svg" alt="open question" class="img">
+          </label>
+          <input type="checkbox" id="q2" class="q-button">
+          <div class="question-container">
+            <p class="description question-text">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </p>
+          </div>
+        </li>
+        <li class="question-item">
+          <p class="question-title title">Is there a mobile app?</p> 
+          <label role="button" class="question-btn" for="q3">
+            <img src="images\icon-arrow.svg" alt="open question" class="img">
+          </label>
+          <input type="checkbox" id="q3" class="q-button">
+          <div class="question-container">
+            <p class="description question-text">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+              sollicitudin ex et ultricies bibendum.
+            </p>
+          </div>
+        </li>
+        <li class="question-item">
+          <p class="question-title title">What about other Chromium browsers?</p> 
+          <label role="button" class="question-btn" for="q4">
+            <img src="images\icon-arrow.svg" alt="open question" class="img">
+          </label>
+          <input type="checkbox" id="q4" class="q-button">
+          <div class="question-container">
+            <p class="description question-text">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+              vitae neque eget nisl gravida pellentesque non ut velit.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <button class="btn accent-btn">More Info</button>
+    </section>
+    <section class="contact-container grid-item-g-gl gl-padding">
+      <div class="contact-wraper grid-item-g-gl">
+        <div class="contact-container__main-content grid-item-g-gl-half">
+          <p class="contact-container__sub-title">35,000+ already joined</p>
+          <h2 class="medium-title contact-container__title">Stay up-to-date with what we’re doing</h2>
+        </div>     
+        <form action="#" class="form grid-item-g-gl-half" method="post">
+          <div class="form-control">
+            <input class="form-control__email-input" type="email" class="form-input" placeholder="Enter your email address">
+          </div>
+          <div class="form-control">
+            <input type="submit" class="form__btn form-control__submit-input" value="Contact Us"></input>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer gl-padding">
+      <div class="footer mx-wdth grid-item-g-gl">
+        <div class="footer__logo-containerfooter__logo-container logo-container">
+          <img src="images\logo-bookmark-footer.svg" alt="logo" class="img logo-img">
+        </div>
+        <nav class="footer__navbar">
+          <ul class="nav-items">
+            <li class="nav-item"><a href="#" class="nav-item__link">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-item__link">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-item__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="navbar-social-media-icons icons-container">
+          <img src="images\icon-facebook.svg" alt="facebook icon" class="img fb-img">
+          <img src="images\icon-twitter.svg" alt="facebook icon" class="img twitter-img">
+        </div>
+    </div>
+    </footer>
+  </main>
+</body>
+</html>
