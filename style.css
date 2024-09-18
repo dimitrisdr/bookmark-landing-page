@@ -221,12 +221,13 @@ body {
 }
 
 .features-item__link::after {
+    --custom-h:3px;
     content: '';
     position: absolute;
     left: 0;
     width: 100%;
-    height: 3px;
-    top: calc(100% + (var(--global-padding) / 2 ) + 1.5px);
+    height: var(--custom-h);
+    top: calc(100% + (var(--global-padding) / 2 ) + var(--custom-h));
     border-radius: 100vw;
     z-index: 100;
     background-color: var(--Soft-Red);
@@ -264,7 +265,7 @@ body {
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     place-content: center;
     gap: calc(2 * var(--global-gap));
 }
