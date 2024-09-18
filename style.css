@@ -93,18 +93,36 @@ body {
 }
 
 .btn {
+    --b-thickness:2px;
     padding: 1rem 1.5rem;
     border-radius: 8px;
     box-shadow: 0 5px 5px var(--Grayish-Blue-trans);
+    transition: background-color 0.2s ease-in, color 0.2s ease-in, border 0.2s ease-in;
+    border: var(--b-thickness) solid transparent;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: var(--clr);
+    border: 2px solid var(--clr);
 }
 
 .accent-btn {
-    background-color: var(--Soft-Blue);
+    --clr: var(--Soft-Blue);
+    background-color: var(--clr);
+    color: #fff;
+}
+
+.red-btn {
+    --clr:var(--Soft-Red);
+    border: var(--b-thickness) solid transparent;
+    background-color: var(--clr);
     color: #fff;
 }
 
 .neutral-btn {
-    background-color: var(--Soft-Grayish-Blue);
+    --clr:var(--Grayish-Blue);
+    background-color:  var(--Soft-Grayish-Blue);
     color: var(--Very-Dark-Blue);
 }
 
@@ -137,7 +155,6 @@ body {
 .img-container {
     position: relative;
     margin-bottom: calc(var(--background-img-top) / 1.5);
-    
 }
 
 .img-container .img {
@@ -198,7 +215,6 @@ body {
     flex-basis: 100%;
 }
 
-
 .features-item__link {
     position: relative;
 }
@@ -250,9 +266,6 @@ body {
 .features-list-categories__item[aria-hidden="true"] {
     display: none;
 }
-
-
-
 
 .cards-container {
     display: grid;
@@ -325,7 +338,6 @@ body {
     overflow: hidden;
 }
 
-
 .contact-wraper {
     text-align: center;
     place-content: center;
@@ -349,17 +361,12 @@ body {
     flex-grow: 1;
 }
 
-.form-control input {
+.form-control .form-control__email-input {
     padding:1rem;
     border-radius: 8px;
-    border: none;
+    border: var(--b-thickness) solid transparent;
 }
 
-.form-control__submit-input {
-    background-color: var(--Soft-Red);
-    color: #fff;
-
-}
 
 .footer {
     background-color: var(--Very-Dark-Blue);
@@ -420,6 +427,10 @@ body {
         border-top: 1px solid var(--Grayish-Blue);
         margin-block: auto;
         padding-block: 1rem;
+    }
+
+    .nav-item.red-btn {
+        background-color: transparent;
     }
 
     .nav-bar__header {
@@ -520,8 +531,6 @@ body {
         gap: 1rem;
     }
 }
-
-
 
 
 @media screen and (min-width: 920px) {
