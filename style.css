@@ -547,6 +547,15 @@ body {
     }
 }
 
+
+@media (prefers-reduced-motion: reduce) {
+
+    .features-list__item {
+      animation: none;
+      transition: none;
+    }
+  }
+
 /* front end mentor styles */
 
 .attribution { font-size: 11px; text-align: center; }
