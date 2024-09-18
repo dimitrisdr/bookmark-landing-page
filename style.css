@@ -99,6 +99,7 @@ body {
     box-shadow: 0 5px 5px var(--Grayish-Blue-trans);
     transition: background-color 0.2s ease-in, color 0.2s ease-in, border 0.2s ease-in;
     border: var(--b-thickness) solid transparent;
+    cursor: pointer;
 }
 
 .btn:hover {
