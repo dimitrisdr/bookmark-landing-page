@@ -369,7 +369,7 @@ body {
     border: none;
 }
 
-@media screen and (max-width:860px) {
+@media screen and (max-width:888px) {
 
     .description:not(.question-text), .medium-title, .big-title, #features-title {
         text-align: center;
@@ -460,7 +460,7 @@ body {
     }
 }
 
-@media screen and (min-width:861px) {
+@media screen and (min-width:889px) {
 
     .menu-btn, .nav-bar__header, .header .navbar-social-media-icons {
         display: none;
