@@ -181,7 +181,7 @@ body {
 }
 
 .gap-lg {
-    margin-block: calc(2 * var(--global-gap));
+    margin-block: calc(1 * var(--global-gap));
 }
 
 .mx-wdth {
