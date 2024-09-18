@@ -9,7 +9,7 @@
 
 h1, h2, h3 {
     line-height: 1.1;
-    max-width: 20ch;
+    max-width: 25ch;
 
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 .big-title {
-    font-size: clamp(1.6rem, 1.1rem + 3vw, 2.2rem);
+    font-size: clamp(1.6rem, 1.1rem + 3vw, 2.1rem);
 }
 
 .medium-title {
@@ -89,7 +89,7 @@ body {
 
 .description {
     color: var(--Dark-Grayish-Blue);
-    max-width: 44ch;
+    max-width: 45ch;
 }
 
 .btn {
@@ -480,7 +480,7 @@ body {
     }
 
     .pic-item {
-        grid-template-columns: 60% auto;
+        grid-template-columns: 55% auto;
         align-items: center;
         gap: calc(1.5 * var(--global-padding));
     }
@@ -527,10 +527,7 @@ body {
 @media screen and (min-width: 920px) {
 
     .cards-container {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        place-content: center;
-        gap: calc(2 * var(--global-gap));
     }
 
     .card {
