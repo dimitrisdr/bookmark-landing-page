@@ -524,6 +524,14 @@ body {
         gap: var(--global-gap);
     }
 
+    .nav-item {
+        transition: color 0.2s ease-in;
+    }
+
+    .nav-item:hover {
+        color: var(--Soft-Red);
+    }
+
     .btn-nav-item {
         background-color: var(--Soft-Red);
         color: white;
