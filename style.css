@@ -62,6 +62,7 @@ body {
     --global-padding: 2rem;
     --global-gap: 2rem;
     --background-img-top:4rem;
+    --b-thickness:2px;
 }
     
 
@@ -93,7 +94,7 @@ body {
 }
 
 .btn {
-    --b-thickness:2px;
+    /* --b-thickness:2px; */
     padding: 1rem 1.5rem;
     border-radius: 8px;
     box-shadow: 0 5px 5px var(--Grayish-Blue-trans);
@@ -352,17 +353,60 @@ body {
     margin-inline: auto;
 }
 
+
 .form-control {
     display: grid;
     flex-grow: 1;
 }
 
 .form-control .form-control__email-input {
-    padding:1rem;
+    padding: 1rem;
     border-radius: 8px;
     border: var(--b-thickness) solid transparent;
+    width: 100%;
+    height: 100%;
 }
 
+.error-msg {
+    justify-self: flex-start;
+    display: none;
+    margin: 0.2rem 0 0.2rem 0.2rem;
+    font-size: 0.8rem;
+}
+
+.email-wraper {
+    background-color: var(--Soft-Red);
+    border-radius: 8px;
+}
+
+.email-container {
+    position: relative;
+}
+
+.error-icon {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.email-container:has(.form-control__email-input:not(:focus):invalid) .error-icon,
+.email-wraper:has(.form-control__email-input:not(:focus):invalid) .error-msg {
+    display: block;
+}
+
+.email-wraper:has(.form-control__email-input:not(:focus):invalid) .form-control__email-input {
+    border: var(--b-thickness) solid var(--Soft-Red);
+}
+
+.error-msg[aria-hidden='false'], .error-icon[aria-hidden='false'] {
+    display: block;
+}
+
+.submit-wraper {
+    align-self: flex-start
+}
 
 .footer {
     background-color: var(--Very-Dark-Blue);
