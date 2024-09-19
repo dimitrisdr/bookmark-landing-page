@@ -417,6 +417,15 @@ body {
     border: none;
 }
 
+.s-icon path {
+    transition: fill 0.2s ease-in;
+    cursor: pointer;
+}
+
+.s-icon path:hover {
+    fill: var(--Soft-Red);
+}
+
 @media screen and (max-width:888px) {
 
     .description:not(.question-text), .medium-title, .big-title, #features-title {
@@ -531,6 +540,7 @@ body {
     .nav-item:hover {
         color: var(--Soft-Red);
     }
+
 
     .btn-nav-item {
         background-color: var(--Soft-Red);
