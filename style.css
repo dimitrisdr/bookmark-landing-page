@@ -241,7 +241,7 @@ body {
     transition: color 0.2s ease-in;
 }
 
-.features-list__item[aria-checked="true"] .features-item__link::after {
+.features-list__item[data-checked="true"] .features-item__link::after {
     transform: scale(1, 1);
     transition: transform 0.2s ease-in;
 }

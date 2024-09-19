@@ -39,7 +39,7 @@
           <li class="nav-item"><a href="#" class="nav-item__link">Features</a></li>
           <li class="nav-item"><a href="#" class="nav-item__link">Pricing</a></li>
           <li class="nav-item"><a href="#" class="nav-item__link">Contact</a></li>
-          <li class="btn red-btn nav-item btn-nav-item"><a role="button" href="#" class="nav-item__link border-wh-thick">login</a></li>
+          <li class="btn red-btn nav-item btn-nav-item"><a href="#" class="nav-item__link border-wh-thick">login</a></li>
         </ul>
       </div>
       <div class="navbar-social-media-icons icons-container">
@@ -74,13 +74,13 @@
         </p>
       </div>
       <ul class="features-list">
-        <li class="features-list__item title" aria-checked="true">
+        <li class="features-list__item title" data-checked="true">
           <a href="#bookmark__link" class="features-item__link">Simple Bookmarking</a>
         </li>
-        <li class="features-list__item title" aria-checked="false">
+        <li class="features-list__item title" data-checked="false">
           <a href="#search__link" class="features-item__link">Speedy Searching</a>
         </li>
-        <li class="features-list__item title" aria-checked="false">
+        <li class="features-list__item title" data-checked="false">
           <a href="#share__link" class="features-item__link"> Easy Sharing</a>
         </li>
       </ul>
@@ -111,12 +111,12 @@
             <button class="btn accent-btn features-btn">More Info</button>
           </div>
         </article>
-        <article data-id="share__link" class="features-list-categories__item grid-item-g-gl pic-item" aria-hidden="true" aria-labelledby="search-title">
+        <article data-id="share__link" class="features-list-categories__item grid-item-g-gl pic-item" aria-hidden="true" aria-labelledby="share-title">
           <div class="features__img-container img-container">
             <img src="images\illustration-features-tab-3.svg" alt="bookmark image" class="img features-img">
           </div>
           <div class="features-list-categories__main-content grid-item-g-gl-half pic-content">
-            <h2 id="search-title" class="title medium-title">Share your bookmarks</h2>
+            <h2 id="share-title" class="title medium-title">Share your bookmarks</h2>
             <p class="description">
               Easily share your bookmarks and collections with others. Create a shareable 
               link that you can send at the click of a button.
@@ -184,7 +184,7 @@
       <ul class="questions-items grid-item-g-gl-half">
         <li class="question-item">
           <p class="question-title title">What is Bookmark?</p> 
-          <label role="button" class="question-btn" for="q1">
+          <label  class="question-btn" for="q1">
             <img src="images\icon-arrow.svg" alt="open question" class="img">
           </label>
           <input type="checkbox" id="q1" class="q-button">
@@ -197,7 +197,7 @@
         </li>
         <li class="question-item">
           <p class="question-title title">How can I request a new browser?</p> 
-          <label role="button" class="question-btn" for="q2">
+          <label class="question-btn" for="q2">
             <img src="images\icon-arrow.svg" alt="open question" class="img">
           </label>
           <input type="checkbox" id="q2" class="q-button">
@@ -212,7 +212,7 @@
         </li>
         <li class="question-item">
           <p class="question-title title">Is there a mobile app?</p> 
-          <label role="button" class="question-btn" for="q3">
+          <label class="question-btn" for="q3">
             <img src="images\icon-arrow.svg" alt="open question" class="img">
           </label>
           <input type="checkbox" id="q3" class="q-button">
@@ -226,7 +226,7 @@
         </li>
         <li class="question-item">
           <p class="question-title title">What about other Chromium browsers?</p> 
-          <label role="button" class="question-btn" for="q4">
+          <label class="question-btn" for="q4">
             <img src="images\icon-arrow.svg" alt="open question" class="img">
           </label>
           <input type="checkbox" id="q4" class="q-button">
