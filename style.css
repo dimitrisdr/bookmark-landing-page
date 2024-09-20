@@ -549,6 +549,10 @@ body {
     .features-list__item:first-child {
         border-top: 1px solid var(--Soft-Grayish-Blue);
     }
+
+    .footer .img {
+        margin-inline: auto;
+    }
 }
 
 @media screen and (min-width:889px) {
