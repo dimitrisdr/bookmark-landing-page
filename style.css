@@ -169,12 +169,12 @@ body {
     background-color: var(--Soft-Blue);
     z-index: 0;
     top: var(--background-img-top);
-    right: 30%;
-    border-radius: 0 100vw 100vw 0;
+    /* right: 30%;
+    border-radius: 0 100vw 100vw 0; */
 }
 
 
-/* .right::before{
+.right::before{
     left: 30%;
     border-radius: 100vw 0 0 100vw;
 }
@@ -182,7 +182,7 @@ body {
 .left::before {
     right: 30%;
     border-radius: 0 100vw 100vw 0;
-} */
+}
 
 .align-center {
     margin-inline: auto;
@@ -435,6 +435,11 @@ body {
     fill: var(--Soft-Red);
 }
 
+.wraper {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
 @media screen and (max-width:888px) {
 
     .description:not(.question-text), .medium-title, .big-title, #features-title {
@@ -576,9 +581,10 @@ body {
     
 
     .pic-item {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto 50%;
         align-items: center;
         gap: calc(1.5 * var(--global-padding));
+        /* overflow: hidden; */
     }
 
     .pic-content .accent-btn {
