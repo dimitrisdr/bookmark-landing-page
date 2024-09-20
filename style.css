@@ -43,6 +43,8 @@ img, svg {
 
 body {
     line-height: 1.5;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 /* global custom properties */
@@ -61,7 +63,7 @@ body {
     --Very-Dark-Blue-trans: hsla(229, 31%, 21%, 0.949);
     --global-padding: 2rem;
     --global-gap: 2rem;
-    --background-img-top:4rem;
+    --background-img-top:5rem;
     --b-thickness:2px;
 }
     
@@ -136,10 +138,6 @@ body {
     display: none;
 }
 
-.img {
-    margin-inline: auto;
-}
-
 .grid-item-g-gl {
     display: grid;
     gap: var(--global-gap);
@@ -156,7 +154,6 @@ body {
 
 .img-container {
     position: relative;
-    margin-bottom: calc(var(--background-img-top) / 1.5);
 }
 
 .img-container .img {
@@ -167,11 +164,21 @@ body {
 .img-container::before {
     content: '';
     position: absolute;
-    width: 220%;
-    height: 85%;
+    width: 150%;
+    height: 80%;
     background-color: var(--Soft-Blue);
     z-index: 0;
     top: var(--background-img-top);
+    /* border-radius: 0 100vw 100vw 0; */
+}
+
+
+.right::before{
+    left: 30%;
+    border-radius: 100vw 0 0 100vw;
+}
+
+.left::before {
     right: 30%;
     border-radius: 0 100vw 100vw 0;
 }
@@ -507,6 +514,22 @@ body {
         margin-top: 1rem;
     }
 
+    .hero-container {
+        grid-template-areas: 'i' 'm';
+    }
+
+    .pic-content {
+        margin-top: var(--global-gap);
+    }
+
+    .hero__img-container {
+        grid-area: i;
+    }
+
+    .hero-container__main-content {
+        grid-area: m;
+    }
+
     .features-list {
         text-align: center;
     }
@@ -548,15 +571,25 @@ body {
         border-radius: 8px;
         padding: 0.5rem 2rem
     }
+    
 
     .pic-item {
-        grid-template-columns: 55% auto;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
         gap: calc(1.5 * var(--global-padding));
     }
 
     .pic-content .accent-btn {
         margin-right: auto;
+    }
+
+    .hero-container .pic-content {
+        align-self: flex-start;
+        margin-top: calc(1.5 * var(--global-gap));
+    }
+
+    .hero-container .pic-content h2 {
+        max-width: 12ch;
     }
 
     .features-list {
