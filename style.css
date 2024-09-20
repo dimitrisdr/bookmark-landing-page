@@ -154,11 +154,13 @@ body {
 
 .img-container {
     position: relative;
+    margin-inline: auto;
 }
 
 .img-container .img {
     position: relative;
     z-index: 1;
+    margin-inline: auto;
 }
 
 .img-container::before {
@@ -287,7 +289,8 @@ body {
 }
 
 .card__main-content {
-    margin-inline: auto;
+    display: grid;
+    place-items: center;
     padding-block: 1rem;
 }
 
@@ -635,6 +638,7 @@ body {
         --custom-margin:2rem;
         margin-top: calc(var(--item-num) * var(--custom-margin));
         margin-bottom: auto;
+        
     }
 }
 
