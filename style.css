@@ -319,6 +319,10 @@ body {
     grid-area: q-title;
 }
 
+.question-title {
+    margin-right: 0.5rem;
+}
+
 .question-btn {
     justify-self: flex-end;
     align-self: center;
